@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 .idea
 *.class
 out
+=======
+.idea/
+*.class
+>>>>>>> 2fa058ccf31fdd225f1d5148138912c53a3cc66c
