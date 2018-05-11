@@ -1,4 +1,4 @@
-package video.video1mergesort;
+package video.video1merge;
 
 import java.util.Arrays;
 
