@@ -7,6 +7,7 @@ import java.util.Arrays;
  * @email : zhzh402@163.com
  * @date : 2018/5/10 10:57
  * @desc : 归并排序
+ * 空间复杂度O(n)，因为每一步的merge需要用一个辅助的数组，这个数组的长度就是原来的长度
  */
 public class MergeSort {
     public static void main(String[] args) {
