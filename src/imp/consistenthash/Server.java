@@ -6,7 +6,7 @@ package imp.consistenthash;
  * @date : 2018/5/18 14:55
  * @desc :
  */
-public class Server<T> {
+public class Server {
 
     private String ip;
     private String name;
