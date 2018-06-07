@@ -1,4 +1,4 @@
-package video.video2quickandheap;
+package video.base;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @desc : 快速排序，优化版，每次把相同的值放在中间；传统的快排每次只搞定一个值。
  * 空间复杂度为logN，因为每次要记录中间点的位置。实际上在最坏的情况下，递归要N层，所以空间复杂度最坏是N
  */
-public class QuickSortAdvanced {
+public class N6QuickSortAdvanced {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package video.video3queuestack;
+package video.base.queuestack;
 
 
 import java.util.Arrays;
@@ -9,12 +9,12 @@ import java.util.Arrays;
  * @date : 2018/5/15 19:27
  * @desc : 数组实现的栈，长度固定
  */
-public class ArrayStack<T> {
+public class N9ArrayStack<T> {
 
     private int stackSize;
     private T[] stack;
     private int index;
-    public ArrayStack(int stackSize){
+    public N9ArrayStack(int stackSize){
         this.stackSize = stackSize;
         stack = (T[]) new Object[stackSize];
         index = 0;
@@ -51,7 +51,7 @@ public class ArrayStack<T> {
     }
 
     public static void main(String[] args) {
-        ArrayStack stack = new ArrayStack(5);
+        N9ArrayStack stack = new N9ArrayStack(5);
         try {
             stack.push(1);
             stack.push(2);

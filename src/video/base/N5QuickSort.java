@@ -1,4 +1,4 @@
-package video.video2quickandheap;
+package video.base;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @date : 2018/5/10 16:18
  * @desc :
  */
-public class QuickSort {
+public class N5QuickSort {
 
     public static void main(String[] args) {
         int[] array = new int[]{4, 2, 9, 1, 0, 8, 5, 2, 5, 2};

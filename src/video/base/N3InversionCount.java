@@ -1,4 +1,4 @@
-package video.video1merge;
+package video.base;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ import java.util.Arrays;
  * 1右边比1小的数：
  * 总共8对
  */
-public class MergeSortToInversion {
+public class N3InversionCount {
 
     public static void main(String[] args) {
 

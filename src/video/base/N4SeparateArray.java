@@ -1,4 +1,4 @@
-package video.video2quickandheap;
+package video.base;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @date : 2018/5/10 14:42
  * @desc : 分成左右两部分，左侧小于pivot，右侧大于pivot; 荷兰国旗问题
  */
-public class SeparateArray {
+public class N4SeparateArray {
 
     public static void main(String[] args) {
         int[] array1 = {4, 2, 9, 1, 0, 8, 5, 2};

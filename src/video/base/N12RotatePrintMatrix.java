@@ -1,4 +1,4 @@
-package video.video3queuestack;
+package video.base;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @date : 2018/5/15 21:23
  * @desc :
  */
-public class RotateMatrix {
+public class N12RotatePrintMatrix {
 
     public static void main(String[] args) {
         int[][] matrix = new int[][]{

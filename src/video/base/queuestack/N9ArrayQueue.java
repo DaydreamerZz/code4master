@@ -1,4 +1,4 @@
-package video.video3queuestack;
+package video.base.queuestack;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @date : 2018/5/15 19:37
  * @desc : 数组实现的队列，长度固定
  */
-public class ArrayQueue {
+public class N9ArrayQueue {
 
     private int left;
     private int right;
@@ -16,7 +16,7 @@ public class ArrayQueue {
     private int queueSize;
     private int[] queue;
 
-    public ArrayQueue(int queueSize){
+    public N9ArrayQueue(int queueSize){
         queue = new int[queueSize];
         this.queueSize = queueSize;
         left  = 0;
@@ -52,7 +52,7 @@ public class ArrayQueue {
     }
 
     public static void main(String[] args) {
-        ArrayQueue queue = new ArrayQueue(5);
+        N9ArrayQueue queue = new N9ArrayQueue(5);
         queue.enque(1);
         queue.enque(2);
         queue.enque(3);

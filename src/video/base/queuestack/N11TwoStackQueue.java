@@ -1,4 +1,4 @@
-package video.video3queuestack;
+package video.base.queuestack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -10,12 +10,12 @@ import java.util.Deque;
  * @desc : 两个栈实现队列
  * 比如知道广度优先算法是使用队列的，要求使用栈实现广度优先，那么就可以把栈封装一下，当做队列使用
  */
-public class TwoStackQueue {
+public class N11TwoStackQueue {
 
     private Deque<Integer> stackPush;
     private Deque<Integer> stackPop;
 
-    public TwoStackQueue(){
+    public N11TwoStackQueue(){
         stackPush = new ArrayDeque<>();
         stackPop = new ArrayDeque<>();
     }
@@ -40,7 +40,7 @@ public class TwoStackQueue {
     }
 
     public static void main(String[] args) {
-        TwoStackQueue queue = new TwoStackQueue();
+        N11TwoStackQueue queue = new N11TwoStackQueue();
         queue.enque(1);
         queue.enque(2);
         queue.enque(3);

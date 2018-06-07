@@ -1,4 +1,4 @@
-package video.video3queuestack;
+package video.base.queuestack;
 
 /**
  * @author : Bruce Zhao
@@ -6,13 +6,13 @@ package video.video3queuestack;
  * @date : 2018/5/15 20:04
  * @desc : 可以拿到最大值的栈
  */
-public class GetMaxStack {
+public class N10GetMaxStack {
 
     private int stackSize;
     private int[] stack;
     private int[] maxStack;
     private int index;
-    public GetMaxStack(int stackSize){
+    public N10GetMaxStack(int stackSize){
         this.stackSize = stackSize;
         stack = new int[stackSize];
         maxStack = new int[stackSize];
@@ -62,7 +62,7 @@ public class GetMaxStack {
     }
 
     public static void main(String[] args) {
-        /*GetMaxStack stack = new GetMaxStack(10);
+        /*N10GetMaxStack stack = new N10GetMaxStack(10);
         stack.push(1);
         stack.push(10);
         stack.push(5);
@@ -77,7 +77,7 @@ public class GetMaxStack {
         System.out.println(stack.pop() + " max: " + stack.currentMax());
         System.out.println(stack.pop() + " max: " + stack.currentMax());*/
 
-        GetMaxStack stack1 = new GetMaxStack(10);
+        N10GetMaxStack stack1 = new N10GetMaxStack(10);
 		stack1.push(3);
 		System.out.println(stack1.currentMax());
 		stack1.push(4);
@@ -90,7 +90,7 @@ public class GetMaxStack {
 
 		System.out.println("=============");
 
-		GetMaxStack stack2 = new GetMaxStack(10);
+		N10GetMaxStack stack2 = new N10GetMaxStack(10);
 		stack2.push(4);
 		System.out.println(stack2.currentMax());
 		stack2.push(3);

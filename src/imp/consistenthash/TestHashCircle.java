@@ -7,9 +7,9 @@ import java.util.UUID;
 
 /**
  * @author : Bruce Zhao
- * @email : zhzh402@163.com
- * @date : 2018/5/18 15:19
- * @desc :
+ * @email  : zhzh402@163.com
+ * @date   : 2018/5/18 15:19
+ * @desc   :
  */
 public class TestHashCircle {
     private static final String IP_PREFIX = "192.168.1.";
