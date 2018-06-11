@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 /**
  * @author : Bruce Zhao
- * @email : zhzh402@163.com
- * @date : 2018/5/10 16:18
- * @desc :
+ * @email  : zhzh402@163.com
+ * @date   : 2018/5/10 16:18
+ * @desc   : 快速排序，低效率的版本
  */
 public class N5QuickSort {
 
@@ -17,8 +17,12 @@ public class N5QuickSort {
         return;
     }
 
+    /*
+    这个版本的快速排序有一个很大的问题在partition部分。
+    partition函数的主要功能是以一个值为轴，从右边开始，把小于pivot放左边，把大于pivot的放右边。虽然在情况好的时候，每次可以把左右两部分做到相对的区分大小，但是这个函数还是一次只确定的一个值的位置，就是pivot。
+     */
     private static void quickSort(int[] array, int left, int right) {
-        if(left < right){
+        if(left < right) {
             int pivot = partition(array, left, right);
             quickSort(array, left, pivot - 1);
             quickSort(array, pivot + 1, right);
@@ -29,22 +33,24 @@ public class N5QuickSort {
         int pivot = array[left];
         while(left < right){
             while(left < right && array[right] >= pivot) right--;
-            //swap(array, left, right);
             array[left] = array[right];
 
             while(left < right && array[left] < pivot) left++;
-//            swap(array, left, right);
             array[right] = array[left];
+
         }
-//        array[left] = pivot;
         array[left] = pivot;
         return left;
-
     }
 
-    private static void swap(int[] array, int i, int j) {
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
-    }
+
+
+
+
+
+
+
+
+
+    
 }

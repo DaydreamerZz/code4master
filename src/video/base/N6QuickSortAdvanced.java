@@ -19,6 +19,9 @@ public class N6QuickSortAdvanced {
         return;
     }
 
+    /*
+    partition函数返回的是一个int[2]的数组，意味着如果选择的pivot在数组中存在多个，那么这一次partition操作返回的数组分别标记了整理后pivot所在的位置开始和结束的索引值
+     */
     private static void quickSort(int[] array, int left, int right){
         if(left < right) {
             //为了避免数组有序，每次去最后一个位置的值造成排序最差的情况，可以采用随机数办法，将最后一个值替换成前面随机的一个值
@@ -34,11 +37,12 @@ public class N6QuickSortAdvanced {
         int[] res = new int[2];
         int lessIndex = left - 1;
         int moreIndex = right;
+        int pivot = array[right];
         //和最右边的值比较，最后一个值作为中间值，最后要放到中间位置，也就是下面的swap(array, moreIndex, right);语句
         while(left < moreIndex){
-            if(array[left] < array[right]){
+            if(array[left] < pivot){
                 swap(array, ++lessIndex, left++);
-            }else if(array[left] > array[right]){
+            }else if(array[left] > pivot){
                 swap(array, --moreIndex, left);
             }else {
                 left++;
