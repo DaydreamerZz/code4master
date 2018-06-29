@@ -1,15 +1,15 @@
-package video.base;
+package video.base.matrixproblem;
 
 /**
  * @author : Bruce Zhao
  * @email : zhzh402@163.com
- * @date : 2018/6/7 11:26
+ * @date : 2018/6/29 10:42
  * @desc :
  */
-public class N8MaxGapAfterSort {
+public class N19FindInMatrix {
 
     public static void main(String[] args) {
-//todo
+
         return;
     }
 }
