@@ -18,7 +18,6 @@ public class Test {
                 break;
             list.add(s);
         }
-
         System.out.println(list);*/
 
         /*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
