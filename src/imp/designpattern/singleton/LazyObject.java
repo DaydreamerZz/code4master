@@ -1,5 +1,4 @@
-package designpattern.singleton;
-
+package imp.designpattern.singleton;
 /**
  * author : Bruce Zhao
  * email  : zhzh402@163.com

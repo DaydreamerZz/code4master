@@ -8,8 +8,8 @@ package multithread.producerconsumer;
  */
 public class Producer {
 
-    private ProductFactory factory;
-    public Producer(ProductFactory factory){
+    private Factory factory;
+    public Producer(Factory factory){
         this.factory = factory;
     }
 

@@ -1,4 +1,4 @@
-package designpattern.factory;
+package imp.designpattern.factory;
 
 public class ShapeFactory {
     public Shape getShape(String shapeType){

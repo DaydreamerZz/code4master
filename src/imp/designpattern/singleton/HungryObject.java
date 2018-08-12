@@ -1,4 +1,4 @@
-package designpattern.singleton;
+package imp.designpattern.singleton;
 
 /**
  * author : Bruce Zhao

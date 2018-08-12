@@ -8,13 +8,13 @@ package multithread.producerconsumer;
  */
 public class Consumer {
 
-    private ProductFactory factory;
+    private Factory factory;
 
-    public Consumer(ProductFactory factory){
+    public Consumer(Factory factory){
         this.factory = factory;
     }
 
     public void consume(){
-        factory.del();
+        factory.remove();
     }
 }

@@ -10,11 +10,40 @@ public class TestProducerConsumer {
 
     public static void main(String[] args) {
 
-        ProductFactory factory = new ProductFactory();
+//        ProductFactory factory = new ProductFactory();
+        Factory factory = new Factory();
+
+
+
+
+        /*
+         * one producer and one consumer
+         */
+        /*Producer producer = new Producer(factory);
+        ThreadP threadP = new ThreadP(producer);
+        Consumer consumer = new Consumer(factory);
+        ThreadC threadC = new ThreadC(consumer);
+        threadP.start();
+        threadC.start();*/
+
+
+        /*
+         * one producer and multi consumer
+         */
         Producer producer = new Producer(factory);
         ThreadP threadP = new ThreadP(producer);
-
         Consumer consumer = new Consumer(factory);
+        Consumer consumer1 = new Consumer(factory);
+        Consumer consumer2 = new Consumer(factory);
+        ThreadC threadC = new ThreadC(consumer);
+        ThreadC threadC1 = new ThreadC(consumer1);
+        ThreadC threadC2 = new ThreadC(consumer2);
+        threadP.start();
+        threadC.start();
+        threadC1.start();
+        threadC2.start();
+
+        /*Consumer consumer = new Consumer(factory);
         Consumer consumer1 = new Consumer(factory);
         Consumer consumer2 = new Consumer(factory);
         Consumer consumer3 = new Consumer(factory);
@@ -31,7 +60,6 @@ public class TestProducerConsumer {
         ThreadP threadP2 = new ThreadP(producer2);
         ThreadP threadP3 = new ThreadP(producer3);
 
-
         threadC.start();
         threadC1.start();
         threadC2.start();
@@ -40,7 +68,7 @@ public class TestProducerConsumer {
         threadP.start();
         threadP1.start();
         threadP2.start();
-        threadP3.start();
+        threadP3.start();*/
 
 
 
