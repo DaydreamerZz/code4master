@@ -1,4 +1,4 @@
-package algo.base.queuestack;
+package algo.vbase.queuestack;
 
 /**
  * @author : Bruce Zhao

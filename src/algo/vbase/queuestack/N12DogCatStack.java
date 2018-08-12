@@ -1,9 +1,7 @@
-package algo.base.queuestack;
+package algo.vbase.queuestack;
 
 import java.util.ArrayDeque;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.Deque;
 
 /**
  * @author : Bruce Zhao

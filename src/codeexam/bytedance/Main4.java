@@ -1,12 +1,12 @@
-package algo.base.matrixproblem;
+package codeexam.bytedance;
 
 /**
  * @author : Bruce Zhao
  * @email : zhzh402@163.com
- * @date : 2018/6/29 10:42
+ * @date : 2018/8/12 9:51
  * @desc :
  */
-public class N19FindInMatrix {
+public class Main4 {
 
     public static void main(String[] args) {
 

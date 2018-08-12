@@ -1,4 +1,4 @@
-package algo.base;
+package algo.vbase;
 
 /**
  * @author : Bruce Zhao

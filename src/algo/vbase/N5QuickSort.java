@@ -1,4 +1,4 @@
-package algo.base;
+package algo.vbase;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package algo.base.queuestack;
+package algo.vbase.queuestack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
