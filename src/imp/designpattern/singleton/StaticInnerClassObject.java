@@ -1,4 +1,6 @@
-package designpattern.singleton;
+package imp.designpattern.singleton;
+
+import imp.designpattern.singleton.LazyObject;
 
 /**
  * author : Bruce Zhao

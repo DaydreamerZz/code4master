@@ -93,11 +93,11 @@ public class SynchronizedQueue {
         sq.push(4);
         sq.push(5);
         sq.push(6);
-        System.out.println(sq.pop());
-        System.out.println(sq.pop());
-        System.out.println(sq.pop());
-        System.out.println(sq.pop());
-        System.out.println(sq.pop());*/
+        System.out.println(sq.popMin());
+        System.out.println(sq.popMin());
+        System.out.println(sq.popMin());
+        System.out.println(sq.popMin());
+        System.out.println(sq.popMin());*/
 
         QueueThread1 thread1 = new QueueThread1(sq);
         QueueThread1 thread2 = new QueueThread1(sq);
@@ -124,8 +124,8 @@ class QueueThread1 extends Thread{
             queue.push(4);
             System.out.println(queue.pop());
             System.out.println(queue.pop());
-//            queue.pop();
-//            queue.pop();
+//            queue.popMin();
+//            queue.popMin();
             System.out.println(queue);
         }
     }

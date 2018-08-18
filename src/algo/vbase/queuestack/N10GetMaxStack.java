@@ -71,11 +71,11 @@ public class N10GetMaxStack {
 
         System.out.println(stack.currentMax());
 
-        System.out.println(stack.pop() + " max: " + stack.currentMax());
-        System.out.println(stack.pop() + " max: " + stack.currentMax());
-        System.out.println(stack.pop() + " max: " + stack.currentMax());
-        System.out.println(stack.pop() + " max: " + stack.currentMax());
-        System.out.println(stack.pop() + " max: " + stack.currentMax());*/
+        System.out.println(stack.popMin() + " max: " + stack.currentMax());
+        System.out.println(stack.popMin() + " max: " + stack.currentMax());
+        System.out.println(stack.popMin() + " max: " + stack.currentMax());
+        System.out.println(stack.popMin() + " max: " + stack.currentMax());
+        System.out.println(stack.popMin() + " max: " + stack.currentMax());*/
 
         N10GetMaxStack stack1 = new N10GetMaxStack(10);
 		stack1.push(3);
