@@ -19,6 +19,12 @@ public class N5LongestIncSeq {
     }
 
     private void getLIS(int[] arr) {
-        int dp = getdp(arr);
+        int[] dp = getdp(arr);
+    }
+
+    private int[] getdp(int[] arr) {
+        int[] dp = new int[arr.length];
+
+        return dp;
     }
 }

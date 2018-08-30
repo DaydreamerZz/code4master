@@ -1,4 +1,4 @@
-package codeexam.pinduoduo;
+package codeexam.pinduoduo.first;
 
 import java.util.Scanner;
 

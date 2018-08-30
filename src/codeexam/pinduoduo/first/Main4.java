@@ -1,4 +1,4 @@
-package codeexam.pinduoduo;
+package codeexam.pinduoduo.first;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @date : 2018/8/5 20:09
  * @desc :
  */
-public class Main5 {
+public class Main4 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class Main5 {
         }
 
         ArrayList<Integer> res = new ArrayList<>();
-        System.out.println(miniTimes(numberList, 0, res));
+       //System.out.println(miniTimes(numberList, 0, res));
 
         miniTimes(numberList, 0, res);
         System.out.println(res.toString());
@@ -36,7 +36,7 @@ public class Main5 {
     private static int miniTimes(ArrayList<Integer> numberList, int count, ArrayList<Integer> res) {
         if(numberList.size() == 0){
             res.add(count);
-            return 0;
+            return count;
         }
         int firstElem = numberList.get(0);
         //case 1 increase
@@ -48,7 +48,7 @@ public class Main5 {
                 firstElem = numberList.get(i);
             }
         }
-        int x = 1 + miniTimes(newListAfterIncr, count+1, res);
+        int x = miniTimes(newListAfterIncr, count+1, res);
         //case 2 decrease
         ArrayList<Integer> newListAfterDecr = new ArrayList<>();
         for(int i = 1; i < numberList.size(); i++){
@@ -57,7 +57,7 @@ public class Main5 {
             else
                 firstElem = numberList.get(i);
         }
-        int y = 1 + miniTimes(newListAfterDecr, count+1, res);
+        int y = miniTimes(newListAfterDecr, count+1, res);
 
         return Math.min(x, y);
     }
