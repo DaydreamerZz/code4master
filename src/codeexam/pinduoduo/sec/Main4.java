@@ -43,7 +43,7 @@ public class Main4 {
             sb.append(list.get(0).charAt(0));
             int size = list.size();
             for(int j = 0; j < size; j++){
-                String s = list.get(j);
+                String s = list.get(0);
                 String gsub = s.substring(1, s.length());
                 list.remove(0);
                 list.add(gsub);
