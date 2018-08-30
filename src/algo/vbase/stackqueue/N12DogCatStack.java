@@ -1,4 +1,4 @@
-package algo.vbase.queuestack;
+package algo.vbase.stackqueue;
 
 import java.util.ArrayDeque;
 import java.util.Date;

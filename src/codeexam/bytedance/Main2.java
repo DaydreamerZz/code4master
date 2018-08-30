@@ -62,7 +62,7 @@ public class Main2 {
 
         Stack<Integer[]> stack1 = new Stack<>();
         while(!stack.isEmpty()){
-//            System.out.println(Arrays.toString(stack.popMin()));
+//            System.out.println(Arrays.toString(stackqueue.popMin()));
             stack1.add(stack.pop());
         }
         StringBuilder sb = new StringBuilder();

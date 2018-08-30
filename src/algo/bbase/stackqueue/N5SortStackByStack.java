@@ -1,4 +1,4 @@
-package algo.bbase.stack;
+package algo.bbase.stackqueue;
 
 import java.util.Stack;
 
@@ -29,7 +29,7 @@ public class N5SortStackByStack {
                 helper.push(cur);
             } else{
                 while(!helper.isEmpty()){
-                    stack.push(helper.pop());
+                    stackqueue.push(helper.pop());
                 }
                 helper.push(cur);
             }*/

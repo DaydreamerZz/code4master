@@ -1,4 +1,4 @@
-package algo.bbase.stack;
+package algo.bbase.stackqueue;
 
 /**
  * @author : Bruce Zhao
