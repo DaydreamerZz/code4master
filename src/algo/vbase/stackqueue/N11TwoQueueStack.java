@@ -1,4 +1,4 @@
-package algo.vbase.queuestack;
+package algo.vbase.stackqueue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -25,7 +25,7 @@ public class N11TwoQueueStack {
 
     public int pop(){
         if(queue.isEmpty()){
-            throw new ArrayIndexOutOfBoundsException("Empty stack");
+            throw new ArrayIndexOutOfBoundsException("Empty stackqueue");
         }
         while(queue.size() > 1){
             helper.add(queue.poll());

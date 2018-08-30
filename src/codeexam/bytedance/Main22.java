@@ -3,7 +3,20 @@ package codeexam.bytedance;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+<<<<<<< HEAD
 //错别字问题
+=======
+/*
+
+6
+1,10
+5,16
+16,32
+32,45
+78,94
+200,220
+ */
+>>>>>>> c20c091308168178c271d22e304e1efa4dd42cc9
 public class Main22 {
 
     public static void main(String[] args) {
@@ -13,7 +26,7 @@ public class Main22 {
         TreeMap<Integer, Integer> map = new TreeMap();
         int start = -1;
         int end = -1;
-        boolean flag = true;
+        boolean firstKey = true;
         boolean newLine = true;
 
         for (int i = 0; i < lineNum; i++) {
@@ -27,8 +40,8 @@ public class Main22 {
 
         for (int key : map.keySet()) {
             if (newLine) {
-                if (flag) {
-                    flag = false;
+                if (firstKey) {
+                    firstKey = false;
                     start = key;
                     end = map.get(key);
                 }

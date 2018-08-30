@@ -1,4 +1,4 @@
-package algo.vbase.queuestack;
+package algo.vbase.stackqueue;
 
 /**
  * @author : Bruce Zhao
@@ -62,20 +62,20 @@ public class N10GetMaxStack {
     }
 
     public static void main(String[] args) {
-        /*N10GetMaxStack stack = new N10GetMaxStack(10);
-        stack.push(1);
-        stack.push(10);
-        stack.push(5);
-        stack.push(7);
-        stack.push(20);
+        /*N10GetMaxStack stackqueue = new N10GetMaxStack(10);
+        stackqueue.push(1);
+        stackqueue.push(10);
+        stackqueue.push(5);
+        stackqueue.push(7);
+        stackqueue.push(20);
 
-        System.out.println(stack.currentMax());
+        System.out.println(stackqueue.currentMax());
 
-        System.out.println(stack.popMin() + " max: " + stack.currentMax());
-        System.out.println(stack.popMin() + " max: " + stack.currentMax());
-        System.out.println(stack.popMin() + " max: " + stack.currentMax());
-        System.out.println(stack.popMin() + " max: " + stack.currentMax());
-        System.out.println(stack.popMin() + " max: " + stack.currentMax());*/
+        System.out.println(stackqueue.popMin() + " max: " + stackqueue.currentMax());
+        System.out.println(stackqueue.popMin() + " max: " + stackqueue.currentMax());
+        System.out.println(stackqueue.popMin() + " max: " + stackqueue.currentMax());
+        System.out.println(stackqueue.popMin() + " max: " + stackqueue.currentMax());
+        System.out.println(stackqueue.popMin() + " max: " + stackqueue.currentMax());*/
 
         N10GetMaxStack stack1 = new N10GetMaxStack(10);
 		stack1.push(3);

@@ -1,12 +1,12 @@
-package algo.bbase.stack;
+package codeexam.bytedance.second;
 
 /**
  * @author : Bruce Zhao
  * @email : zhzh402@163.com
- * @date : 2018/8/18 21:58
+ * @date : 2018/8/25 9:38
  * @desc :
  */
-public class N4DogCatQueue {
+public class Main2 {
 
     public static void main(String[] args) {
 

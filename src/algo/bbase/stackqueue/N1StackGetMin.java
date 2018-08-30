@@ -1,4 +1,4 @@
-package algo.bbase.stack;
+package algo.bbase.stackqueue;
 
 import java.util.Stack;
 

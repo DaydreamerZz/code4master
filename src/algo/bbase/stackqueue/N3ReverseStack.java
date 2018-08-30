@@ -1,4 +1,4 @@
-package algo.bbase.stack;
+package algo.bbase.stackqueue;
 
 import java.util.Stack;
 
@@ -42,7 +42,7 @@ public class N3ReverseStack {
     }
     /*
      * 这种方式得到的结果和原始的一样，比如开始的栈从顶大底是5 4 3 2 1，那么这个递归得到1之后，在插入到栈，然后插入2...等于没有做。
-     * 所以现在的问题是int i = stack.pop()这句，这个i应该得到当前栈底的值才可以。
+     * 所以现在的问题是int i = stackqueue.pop()这句，这个i应该得到当前栈底的值才可以。
      */
     public static void reverseFailed(Stack<Integer> stack){
         if(stack.isEmpty()){
