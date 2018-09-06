@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * @author : Bruce Zhao
@@ -35,15 +35,41 @@ public class Test {
         return;*/
 
 
-        Integer a = 1;
-        Integer b = 2;
-        Integer c = 3;
-        Integer d = 3;
-        Integer e = 129;
-        Integer f = 129;
-        System.out.println(c == d);
-        System.out.println(c == (a+b));
-        System.out.println(c.equals(a+b));
-        System.out.println(e == f);
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+
+        Vector<Integer> vector = new Vector<>();
+        vector.add(1);
+
+        Hashtable<Integer, String> table = new Hashtable<>();
+
+
+
+        HashSet<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(3);
+        set.add(2);
+        Iterator<Integer> iterator1 = set.iterator();
+        while (iterator1.hasNext()){
+            System.out.println(iterator1.next());
+        }
+
+
+        LinkedHashSet<Integer> hashSet = new LinkedHashSet<>();
+        hashSet.add(1);
+        hashSet.add(3);
+        hashSet.add(2);
+        Iterator<Integer> iterator = hashSet.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+
+        HashMap<Integer, String> hashMap = new HashMap<>();
+        for(int i = 0; i < 10; i++){
+            hashMap.put(i, i+"");
+        }
+
+
     }
 }
