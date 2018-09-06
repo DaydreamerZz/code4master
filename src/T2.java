@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /*
  * author: Bruce Zhao
  * email : zhzh402@163.com
@@ -8,14 +10,13 @@ public class T2 {
 
     public static void main(String[] args) {
         T2 t2 = new T2();
-        /*int[] a = new int[]{
-
-        }
-        t2.sort();*/
+        int[] a = new int[]{15, 0, 6, 9, 3};
+        t2.sort(a);
+        System.out.println(Arrays.toString(a));
         return;
     }
 
-    public void sort(Comparable[] a) {
+    public void sort(int[] a) {
         int N = a.length;
         int h = 1;
         while (h < N / 3) {
@@ -31,12 +32,12 @@ public class T2 {
         }
     }
 
-    public boolean compareElement(Comparable v, Comparable w) {
-        return v.compareTo(w) < 0;
+    public boolean compareElement(int v, int w) {
+        return (v - w) > 0;
     }
 
-    public static void exch(Comparable[] a, int i, int j) {
-        Comparable t = a[i];
+    public static void exch(int[] a, int i, int j) {
+        int t = a[i];
         a[i] = a[j];
         a[j] = t;
     }
