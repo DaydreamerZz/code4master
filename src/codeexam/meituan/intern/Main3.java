@@ -1,4 +1,4 @@
-package codeexam.meituan;
+package codeexam.meituan.intern;
 
 /**
  * author : Bruce Zhao
