@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
+import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * @author : Bruce Zhao
@@ -35,7 +37,7 @@ public class Test {
         return;*/
 
 
-        Integer a = 1;
+        /*Integer a = 1;
         Integer b = 2;
         Integer c = 3;
         Integer d = 3;
@@ -44,6 +46,74 @@ public class Test {
         System.out.println(c == d);
         System.out.println(c == (a+b));
         System.out.println(c.equals(a+b));
-        System.out.println(e == f);
+        System.out.println(e == f);*/
+
+
+        HashMap<Integer, String> hashMap = new HashMap<>();
+
+
+        LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>(16, 1, true);
+
+        linkedHashMap.put(3,"3");
+        linkedHashMap.put(1,"1");
+        linkedHashMap.put(2,"2");
+        linkedHashMap.get(3);
+        Iterator<Map.Entry<Integer, String>> iterator = linkedHashMap.entrySet().iterator();
+        while(iterator.hasNext()){
+            Map.Entry<Integer, String> next = iterator.next();
+            System.out.println(next.getKey() + next.getValue());
+        }
+
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        Deque<Integer> deque = new ArrayDeque<>();
+
+        BlockingQueue queue = new ArrayBlockingQueue(10);
+
+        Stack<Integer> stack = new Stack<>();
+
+
+        Vector<Integer> vector = new Vector<>();
+
+        /*Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(3);
+        set.add(2);
+        Iterator<Integer> iterator1 = set.iterator();
+        while (iterator1.hasNext()){
+            System.out.println(iterator1.next());
+        }
+
+        set = new LinkedHashSet<>();
+        set.add(1);
+        set.add(3);
+        set.add(2);
+        iterator1 = set.iterator();
+        while (iterator1.hasNext()){
+            System.out.println(iterator1.next());
+        }*/
+
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+//        ListIterator<Integer> listIterator = arrayList.listIterator();
+        for(int i = 0; i < 10; i++){
+            arrayList.add(i);
+        }
+
+
+//        Collections.unmodifiableList();
+//        Collections.synchronizedList()
+
+        Iterator<Integer> iterator1 = arrayList.iterator();
+        while(iterator1.hasNext()){
+            Integer next = iterator1.next();
+            if(next == 2){
+                arrayList.remove(2);
+            }
+        }
+
+
+
+
     }
 }
