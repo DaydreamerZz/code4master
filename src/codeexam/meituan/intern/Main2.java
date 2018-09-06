@@ -73,7 +73,7 @@ public class Main2 {
 
 
 
-package codeexam.meituan;
+package codeexam.meituan.intern;
 
 import java.util.Scanner;
 

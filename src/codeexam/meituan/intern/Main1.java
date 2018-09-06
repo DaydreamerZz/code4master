@@ -1,4 +1,4 @@
-package codeexam.meituan;
+package codeexam.meituan.intern;
 
 import java.util.Arrays;
 import java.util.Scanner;
