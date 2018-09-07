@@ -77,16 +77,6 @@ public class Test {
         Vector<Integer> vector = new Vector<>();
 
         /*Set<Integer> set = new HashSet<>();
->>>>>>> 7af9428dbd0553d35fc623b81c9c8d0f0ab3e304
-        set.add(1);
-        set.add(3);
-        set.add(2);
-        Iterator<Integer> iterator1 = set.iterator();
-        while (iterator1.hasNext()){
-            System.out.println(iterator1.next());
-        }
-
-<<<<<<< HEAD
 
         LinkedHashSet<Integer> hashSet = new LinkedHashSet<>();
         hashSet.add(1);
@@ -104,7 +94,7 @@ public class Test {
         }
 
 
-=======
+
         set = new LinkedHashSet<>();
         set.add(1);
         set.add(3);
@@ -133,5 +123,6 @@ public class Test {
             }
         }
 
+        Stack<Integer> stack1 = new Stack<>();
     }
 }
