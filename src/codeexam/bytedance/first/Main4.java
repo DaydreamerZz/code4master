@@ -1,4 +1,4 @@
-package codeexam.bytedance;
+package codeexam.bytedance.first;
 
 /**
  * @author : Bruce Zhao

@@ -1,4 +1,4 @@
-package codeexam.bytedance;
+package codeexam.bytedance.first;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -34,13 +34,13 @@ public class Main11 {
                 }
             }
         }
-        list.sort(new Comparator<Integer>() {
+        /*list.sort(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
                 return o2 - o1;
             }
-        });
-        System.out.println(res + "," + list.get(0));
+        });*/
+        System.out.println(res);
         return res;
     }
 
@@ -66,12 +66,12 @@ public class Main11 {
         line = scanner.nextLine();
         String[] split = line.split(",");
         int m = Integer.parseInt(split[0]);
-        int n = Integer.parseInt(split[1]);
-        int[][] arr = new int[m][n];
+//        int n = Integer.parseInt(split[1]);
+        int[][] arr = new int[m][m];
         for(int i = 0; i < m; i++){
             line = scanner.nextLine();
-            split = line.split(",");
-            for(int j = 0; j < n; j++){
+            split = line.split(" ");
+            for(int j = 0; j < m; j++){
                 arr[i][j] = Integer.parseInt(split[j]);
             }
         }
