@@ -11,7 +11,21 @@ import java.util.concurrent.BlockingQueue;
  */
 public class Test {
 
+
     public static void main(String[] args) {
+
+        final String str1 = "ja";
+String str2 = "ja";
+String str3 = str1 + "va";
+String str4 = str2 + "va";
+String str5 = "java";
+System.out.println(str3 == str5);//true
+System.out.println("ja" + "va" == str5);//true
+System.out.println(str4 == str5);//false
+
+
+
+
 
         /*while (scanner.hasNext()){
             String s = scanner.nextLine();
@@ -47,6 +61,13 @@ public class Test {
         System.out.println(e == f);*/
 
 
+       /* char[] chars = "abdjfks0000123".toCharArray();
+        chars[0] = 0;
+        chars[1] = 0;
+        chars[5] = 0;
+        chars[6] = 0;
+        System.out.println(String.valueOf(chars));
+
         HashMap<Integer, String> hashMap = new HashMap<>();
 
 
@@ -74,7 +95,7 @@ public class Test {
         Stack<Integer> stack = new Stack<>();
 
 
-        Vector<Integer> vector = new Vector<>();
+        Vector<Integer> vector = new Vector<>();*/
 
         /*Set<Integer> set = new HashSet<>();
 
@@ -105,17 +126,10 @@ public class Test {
         }*/
 
 
-        ArrayList<Integer> arrayList = new ArrayList<>();
-//        ListIterator<Integer> listIterator = arrayList.listIterator();
-        for(int i = 0; i < 10; i++){
-            arrayList.add(i);
-        }
-
-
 //        Collections.unmodifiableList();
 //        Collections.synchronizedList()
 
-        Iterator<Integer> iterator1 = arrayList.iterator();
+        /*Iterator<Integer> iterator1 = arrayList.iterator();
         while(iterator1.hasNext()){
             Integer next = iterator1.next();
             if(next == 2){
@@ -123,6 +137,6 @@ public class Test {
             }
         }
 
-        Stack<Integer> stack1 = new Stack<>();
+        Stack<Integer> stack1 = new Stack<>();*/
     }
 }

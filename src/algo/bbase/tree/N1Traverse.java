@@ -1,4 +1,4 @@
-package algo.vbase.tree;
+package algo.bbase.tree;
 
 import java.util.Stack;
 
@@ -8,7 +8,7 @@ import java.util.Stack;
  * @date : 2018/8/11 13:30
  * @desc :
  */
-public class N30Traverse {
+public class N1Traverse {
 
     public static void main(String[] args) {
         Node head = Node.initTree();
