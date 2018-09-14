@@ -1,4 +1,4 @@
-package codeexam.bytedance;
+package codeexam.bytedance.first;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
