@@ -11,17 +11,16 @@ import java.util.concurrent.BlockingQueue;
  */
 public class Test {
 
-
+    int i1 = 1;
+    static final int i2 = 1;
     public static void main(String[] args) {
+        int i3 = 1;
+        final int i4 = 1;
+        System.out.println(i2);
+        System.out.println(i3);
 
-        final String str1 = "ja";
-String str2 = "ja";
-String str3 = str1 + "va";
-String str4 = str2 + "va";
-String str5 = "java";
-System.out.println(str3 == str5);//true
-System.out.println("ja" + "va" == str5);//true
-System.out.println(str4 == str5);//false
+        Test t = new Test();
+        System.out.println(t.i1);
 
 
 
