@@ -1,8 +1,6 @@
 package imp.consistenthash;
 
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * @author : Bruce Zhao
@@ -63,10 +61,12 @@ public class ConsistentHastWithoutVirtualNode {
                 "10.211.0.1:3333"
         };
 
-        Set<Integer> integers = sortedMap.keySet();
-        for(Integer i : integers){
-            System.out.println(sortedMap.get(i) + " " + i);
+        Iterator<Map.Entry<Integer, String>> iterator = sortedMap.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer, String> next = iterator.next();
+            System.out.println(next.getKey() + " " + next.getValue());
         }
+
 
         for(int i = 0; i < nodes.length; i++){
             System.out.println("[" + nodes[i] + "]的hash值为: " + getHash(nodes[i]) + ", 被分配到: " + getServer(nodes[i]));

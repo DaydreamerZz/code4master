@@ -1,4 +1,4 @@
-package designpattern.observer;
+package imp.designpattern.observer;
 
 public class HexaObserver extends Observer{
     public HexaObserver(Subject subject){
@@ -7,6 +7,6 @@ public class HexaObserver extends Observer{
     }
     @Override
     void update() {
-        System.out.println("Hexa:" + Integer.toBinaryString(subject.getState()));
+        System.out.println("Hexa:" + Integer.toHexString(subject.getState()));
     }
 }

@@ -13,6 +13,7 @@ public class Test {
 
     int i1 = 1;
     static final int i2 = 1;
+    static String str = "abcde";
     public static void main(String[] args) {
         int i3 = 1;
         final int i4 = 1;
@@ -21,6 +22,8 @@ public class Test {
 
         Test t = new Test();
         System.out.println(t.i1);
+//        Arrays.equals(new int[]{2,1}, new int[]{1,2});
+        System.gc();
 
 
 

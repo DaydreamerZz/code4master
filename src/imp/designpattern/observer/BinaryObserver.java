@@ -1,4 +1,4 @@
-package designpattern.observer;
+package imp.designpattern.observer;
 
 public class BinaryObserver extends Observer{
     public BinaryObserver(Subject subject){
