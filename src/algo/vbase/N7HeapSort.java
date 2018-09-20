@@ -60,6 +60,7 @@ public class N7HeapSort {
      */
     private static void heapSort(int[] array) {
         //根据数组得到大根堆
+        System.out.println("origin:   " + Arrays.toString(array));
         for(int i = 0; i < array.length; i++){
             heapInsert(array, i);
         }

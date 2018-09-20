@@ -9,13 +9,64 @@ import java.util.concurrent.BlockingQueue;
  * @date : 2018/5/14 12:02
  * @desc :
  */
+
+class TestMapKey{
+    int k;
+    boolean flag = true;
+    boolean changed = true;
+    public void setK(int k) {
+        this.k = k;
+        if(flag){
+            flag = false;
+            return;
+        }else if(flag == false){
+            changed = false;
+        }
+    }
+
+    public int getK() {
+        return k;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return changed;
+    }
+
+    @Override
+    public int hashCode() {
+        return k;
+    }
+}
 public class Test {
 
     int i1 = 1;
     static final int i2 = 1;
     static String str = "abcde";
     public static void main(String[] args) {
-        int i3 = 1;
+
+
+
+        /*HashMap<TestMapKey, Integer> map = new HashMap<>();
+        TestMapKey key = new TestMapKey();
+        key.setK(1);
+        map.put(key, 1);
+        System.out.println(map.get(key));
+        key.setK(2);
+        System.out.println(map.get(key));*/
+
+        /*HashMap<ArrayList<Integer>, Integer> map = new HashMap<>();
+        ArrayList<Integer> key = new ArrayList<>();
+        key.add(1);
+        map.put(key, 1);
+        System.out.println(map.get(key));
+        key.add(2);
+        System.out.println(map.get(key));*/
+
+
+
+
+        /*int i3 = 1;
         final int i4 = 1;
         System.out.println(i2);
         System.out.println(i3);
@@ -23,7 +74,8 @@ public class Test {
         Test t = new Test();
         System.out.println(t.i1);
 //        Arrays.equals(new int[]{2,1}, new int[]{1,2});
-        System.gc();
+        System.gc();*/
+
 
 
 
