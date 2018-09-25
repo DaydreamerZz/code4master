@@ -19,7 +19,9 @@ public class N3InversionCount {
 
     public static void main(String[] args) {
 
-        int[] array = new int[]{4, 3, 5, 2, 1};
+//        int[] array = new int[]{4, 3, 5, 2, 1};
+        int[] array = new int[]{1, 4, 3, 2};
+//        int[] array = new int[]{1, 3, 4, 2};
         System.out.println(mergeSort(array, 0, array.length-1));
         System.out.println(Arrays.toString(array));
         return;
@@ -41,10 +43,10 @@ public class N3InversionCount {
         int index = 0;
         //如果按照从小到大的顺序排列数组的话，假设现在左边部分已排序是3 4 5，右边部分是1 6，那么在合并的过程中按照小和问题的思路，3比1大，但是不能认为3比1之后的数都大。如果按照从大到小的顺序排列，那么左边是5 4 3，右边是6 1，判断5比1大是一个逆序，那么5之后所有的都是相对于1逆序的。
         while(l1 <= mid && l2 <= right){
-            if(array[l1] < array[l2]){ //不符合逆序条件
+            if(array[l1] <= array[l2]){ //不符合逆序条件
                 helper[index++] = array[l2++];
             } else{ //左边比右边大，那么左边当前位置开始，之后都是符合逆序的
-                count += 1 * (mid - l1 + 1);
+                count += 1 * (right - l2 + 1);
                 helper[index++] = array[l1++];
             }
         }
