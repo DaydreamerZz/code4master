@@ -1,6 +1,7 @@
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Executors;
 
 
 /**
@@ -45,6 +46,12 @@ public class Test {
     static String str = "abcde";
     public static void main(String[] args) {
 
+        TreeMap<String, Integer> map = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return 0;
+            }
+        });
 
 
         /*HashMap<TestMapKey, Integer> map = new HashMap<>();
