@@ -1,4 +1,4 @@
-package algo.bbase.stackqueue;
+package algo.bbase.c1_stackqueue;
 
 import java.util.Stack;
 
@@ -6,8 +6,7 @@ import java.util.Stack;
  * @author : Bruce Zhao
  * @email : zhzh402@163.com
  * @date : 2018/8/18 21:30
- * @desc : 对一个栈进行排序，从顶到底按从大到小排序，只能借助一个额外的栈
- * 那么额外的栈需要实现从顶到底按照从小到大的顺序才行。
+ * @desc : 对一个栈进行排序，从顶到底按从大到小排序，只能借助一个额外的栈，额外的栈需要实现从顶到底按照从小到大的顺序才行。
  *
  */
 public class N5SortStackByStack {
@@ -43,6 +42,8 @@ public class N5SortStackByStack {
             helper.push(cur);
 
         }
+
+
 
         while(!helper.isEmpty()){
             stack.push(helper.pop());

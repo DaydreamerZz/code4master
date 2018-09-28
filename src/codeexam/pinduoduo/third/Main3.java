@@ -43,7 +43,7 @@ public class Main3 {
         }
 
         /*int index = 0;
-        for(int[] ints : dp){
+        for(int[] ints : c4_dp){
             System.out.println(index++ + Arrays.toString(ints));
         }*/
 

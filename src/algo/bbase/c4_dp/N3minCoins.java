@@ -1,4 +1,4 @@
-package algo.bbase.dp;
+package algo.bbase.c4_dp;
 
 import java.util.Arrays;
 

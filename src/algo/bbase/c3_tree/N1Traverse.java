@@ -1,4 +1,4 @@
-package algo.bbase.tree;
+package algo.bbase.c3_tree;
 
 import java.util.Stack;
 

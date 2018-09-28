@@ -1,4 +1,4 @@
-package algo.bbase.string;
+package algo.bbase.c5_string;
 
 import java.util.Scanner;
 

@@ -36,16 +36,16 @@ public class Main2 {
             for(int j = 1; j <= 120; j++){
 //                int x  = 0, y = 0;
                 /*if(j >= costAndgain[i][0]) {
-                    x = dp[i - 1][j - costAndgain[i][0]] + costAndgain[i][1];
+                    x = c4_dp[i - 1][j - costAndgain[i][0]] + costAndgain[i][1];
                 }else {
                     x = costAndgain[i][1];
                 }
                 if(j >= costAndgain[i][2]) {
-                    y = dp[i - 1][j - costAndgain[i][2]] + costAndgain[i][3];
+                    y = c4_dp[i - 1][j - costAndgain[i][2]] + costAndgain[i][3];
                 }else{
                     y = costAndgain[i][3];
                 }
-                dp[i][j] = Math.max(x, y);*/
+                c4_dp[i][j] = Math.max(x, y);*/
                 if(j < costAndgain[i][0]){
                     dp[i][j] = dp[i-1][j];
                 }else if(j >= costAndgain[i][0] && j < costAndgain[i][2]){
@@ -65,13 +65,13 @@ public class Main2 {
                 }
 
 
-//                dp[i][j] = Math.max(dp[i][j], dp[i-1][j]);
+//                c4_dp[i][j] = Math.max(c4_dp[i][j], c4_dp[i-1][j]);
             }
         }
 
 
         /*for(int i = 0; i < count; i++) {
-            System.out.println(Arrays.toString(dp[i]));
+            System.out.println(Arrays.toString(c4_dp[i]));
         }*/
         int max = 0;
         for(int i = 0; i < count; i++){
@@ -82,7 +82,7 @@ public class Main2 {
             }
         }
         System.out.println(max);
-//        System.out.println(dp[count-1][120]);
+//        System.out.println(c4_dp[count-1][120]);
 //        System.out.println(Arrays.deepToString(costAndgain));
         return;
     }

@@ -1,4 +1,4 @@
-package algo.bbase.stackqueue;
+package algo.bbase.c1_stackqueue;
 
 import java.util.Stack;
 
@@ -19,7 +19,7 @@ public class N3ReverseStack {
         stack.add(4);
         stack.add(5);
 
-        reverseFailed(stack);
+        /*reverseFailed(stack);
 
         while(!stack.isEmpty()){
             System.out.println(stack.pop());
@@ -30,7 +30,7 @@ public class N3ReverseStack {
         stack.add(2);
         stack.add(3);
         stack.add(4);
-        stack.add(5);
+        stack.add(5);*/
 
         reverseSucceed(stack);
 
@@ -41,8 +41,8 @@ public class N3ReverseStack {
         return;
     }
     /*
-     * 这种方式得到的结果和原始的一样，比如开始的栈从顶大底是5 4 3 2 1，那么这个递归得到1之后，在插入到栈，然后插入2...等于没有做。
-     * 所以现在的问题是int i = stackqueue.pop()这句，这个i应该得到当前栈底的值才可以。
+     * 这种方式得到的结果和原始的一样，比如开始的栈从顶到底是5 4 3 2 1，那么这个递归到栈中只有一个值时结束，执行stack.add()，结果第一个插入到栈的是1，然后插入2...等于没有做。
+     * 所以现在的问题是int i = stack.pop()这句，这个i应该得到当前栈底的值才可以。
      */
     public static void reverseFailed(Stack<Integer> stack){
         if(stack.isEmpty()){
@@ -53,6 +53,9 @@ public class N3ReverseStack {
         stack.add(i);
     }
 
+    /*
+     * 当前栈从顶到底是5 4 3 2 1，因为每次的getAndRemoveBottom得到的是栈底值，所以最后一次得到的是5，然后插入；然后是4，所以得到的栈变成1 2 3 4 5
+     */
     public static void reverseSucceed(Stack<Integer> stack){
         if(stack.isEmpty()){
             return;
@@ -62,6 +65,8 @@ public class N3ReverseStack {
         stack.add(i);
     }
 
+
+    //拿到并删除当前的栈底
     private static int getAndRemoveBottom(Stack<Integer> stack) {
         int res = stack.pop();
         if(stack.isEmpty()){

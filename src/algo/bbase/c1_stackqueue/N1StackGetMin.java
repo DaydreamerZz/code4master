@@ -1,4 +1,4 @@
-package algo.bbase.stackqueue;
+package algo.bbase.c1_stackqueue;
 
 import java.util.Stack;
 
@@ -48,9 +48,10 @@ public class N1StackGetMin {
 }
 
 /*
- * 3 4 5 1 2 1
- * 3 - - 1 - 1
- *
+ * dataStack: 3 4 5 1 2 1
+ * miniStack: 3 - - 1 - 1
+ * 如果当前插入的值比miniStack栈顶小，那么插入当前值插入miniStack，否则不插入。结果是miniStack的长度可能比
+ * dataStack的长度小。
  */
 class MyStack1{
     Stack<Integer> dataStack = new Stack<>();
@@ -84,6 +85,11 @@ class MyStack1{
     }
 }
 
+/*
+ * dataStack: 3 4 5 1 2 1
+ * miniStack: 3 3 3 1 1 1
+ * 和上一个思路的不同在于miniStack的长度会和dataStack一样长。
+ */
 class MyStack2{
     Stack<Integer> dataStack = new Stack<>();
     Stack<Integer> miniStack = new Stack<>();
