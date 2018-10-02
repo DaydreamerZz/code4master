@@ -15,16 +15,13 @@ public class Node {
     public Node(int data) {
         this.value = data;
     }
-
-
-    public static Node initTree(){
 /*
-     1
-   2   3
- 4  5 6
+  1
+ 2   3
+4  5 6
 7 8
 */
-
+    public static Node initTree(){
         Node root = new Node(1);
         Node node2 = new Node(2);
         Node node3 = new Node(3);
