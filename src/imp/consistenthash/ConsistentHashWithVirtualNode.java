@@ -1,5 +1,7 @@
 package imp.consistenthash;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.*;
 
 /**
@@ -46,6 +48,8 @@ public class ConsistentHashWithVirtualNode {
         }
     }
 
+
+
     private static int getHash(String serverIpStr) {
         final int p = 16777619;
          int hash = (int)2166136261L;
@@ -73,9 +77,6 @@ public class ConsistentHashWithVirtualNode {
             virtualNodeName = biggerNodes.get(biggerNodes.firstKey());
         }
         return virtualNodeName.substring(0,virtualNodeName.indexOf("&&"));
-
-
-//
     }
 
     public static void main(String[] args) {
@@ -86,9 +87,9 @@ public class ConsistentHashWithVirtualNode {
                 "10.211.0.1:3333"
         };
 
-        /*Set<Integer> integers = sortedMap.keySet();
+        /*Set<Integer> integers = dataServers.keySet();
         for(Integer i : integers){
-            System.out.println(sortedMap.get(i) + " " + i);
+            System.out.println(dataServers.get(i) + " " + i);
         }*/
 
         for(int i = 0; i < nodes.length; i++){
